@@ -258,7 +258,14 @@ namespace UserLogin
                 rtxtDapAn3.BackColor = Color.White;
                 rtxtDapAn4.BackColor = Color.White;
 
-                rtxtDeBai.Text = "Câu " + (IdCauHoi + 1).ToString() + ": " + dtTracnghiem.Rows[IdCauHoi]["Debai"].ToString();
+                if(dtTracnghiem.Rows[IdCauHoi]["LoaiCauHoi"].ToString() == "Liet")
+                {
+                    rtxtDeBai.Text = " *Câu " + (IdCauHoi + 1).ToString() + ": " + dtTracnghiem.Rows[IdCauHoi]["Debai"].ToString();
+                }
+                else
+                {
+                    rtxtDeBai.Text = " Câu " + (IdCauHoi + 1).ToString() + ": " + dtTracnghiem.Rows[IdCauHoi]["Debai"].ToString();
+                }
                 rtxtDapAn1.Text = dtTracnghiem.Rows[IdCauHoi]["DapAn1"].ToString();
                 rtxtDapAn2.Text = dtTracnghiem.Rows[IdCauHoi]["DapAn2"].ToString();
 
@@ -315,7 +322,7 @@ namespace UserLogin
                     case 4:
                         rbDapAn4.Checked = true;
                         TomauCauHoi(rbDapAn4, null);
-                        
+            
                         break;
                     default:
                         break;
@@ -335,10 +342,10 @@ namespace UserLogin
 
             for (int i = 1; i <= 4; i++)
             {
-                var txt = Controls.Find("rtxtDapAn" + i.ToString(), true).FirstOrDefault() as System.Windows.Forms.TextBox;
+                var txt = Controls.Find("rtxtDapAn" + i.ToString(), true).FirstOrDefault() as System.Windows.Forms.RichTextBox;
                 if ((rb.Text.Trim() == i.ToString()) && (rb.Checked))
                 {
-                    txt.BackColor = Color.Gray;
+                    txt.BackColor = Color.Yellow;
                 }
                 else
                 {
@@ -350,7 +357,7 @@ namespace UserLogin
         //function thuc hien su kien khi check vao textbox thay vi radiobox
         private void XulycheckTextBox(object sender, EventArgs e) 
         {
-            System.Windows.Forms.TextBox txtclick = sender as System.Windows.Forms.TextBox;
+            System.Windows.Forms.RichTextBox txtclick = sender as System.Windows.Forms.RichTextBox;
             int chon = Convert.ToInt32(clsFunction.Right(txtclick.Name.Trim(), 1));
 
             var txt = Controls.Find("rbDapAn" + chon.ToString(), true).FirstOrDefault() as RadioButton;

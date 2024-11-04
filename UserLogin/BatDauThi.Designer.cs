@@ -56,10 +56,6 @@
             this.dataTable1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.listcauhoi = new DevExpress.XtraEditors.ListBoxControl();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.rtxtDapAn3 = new System.Windows.Forms.TextBox();
-            this.rtxtDapAn4 = new System.Windows.Forms.TextBox();
-            this.rtxtDapAn1 = new System.Windows.Forms.TextBox();
-            this.rtxtDapAn2 = new System.Windows.Forms.TextBox();
             this.rtxtDeBai = new System.Windows.Forms.RichTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.rbDapAn4 = new System.Windows.Forms.RadioButton();
@@ -83,6 +79,11 @@
             this.labelCauLiet = new System.Windows.Forms.Label();
             this.txtCauLiet = new System.Windows.Forms.TextBox();
             this.panelGridcontrol = new System.Windows.Forms.Panel();
+            this.rtxtDapAn1 = new System.Windows.Forms.RichTextBox();
+            this.rtxtDapAn2 = new System.Windows.Forms.RichTextBox();
+            this.rtxtDapAn3 = new System.Windows.Forms.RichTextBox();
+            this.rtxtDapAn4 = new System.Windows.Forms.RichTextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -367,7 +368,9 @@
             // listcauhoi
             // 
             this.listcauhoi.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.listcauhoi.Appearance.Font = new System.Drawing.Font("Arial", 15F);
             this.listcauhoi.Appearance.Options.UseBackColor = true;
+            this.listcauhoi.Appearance.Options.UseFont = true;
             this.listcauhoi.Location = new System.Drawing.Point(1373, 85);
             this.listcauhoi.Margin = new System.Windows.Forms.Padding(4);
             this.listcauhoi.Name = "listcauhoi";
@@ -378,10 +381,11 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.rtxtDapAn3);
             this.panel1.Controls.Add(this.rtxtDapAn4);
-            this.panel1.Controls.Add(this.rtxtDapAn1);
             this.panel1.Controls.Add(this.rtxtDapAn2);
+            this.panel1.Controls.Add(this.rtxtDapAn1);
             this.panel1.Controls.Add(this.rtxtDeBai);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.rbDapAn4);
@@ -395,63 +399,23 @@
             this.panel1.TabIndex = 5;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // rtxtDapAn3
-            // 
-            this.rtxtDapAn3.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtxtDapAn3.Location = new System.Drawing.Point(26, 532);
-            this.rtxtDapAn3.Name = "rtxtDapAn3";
-            this.rtxtDapAn3.ReadOnly = true;
-            this.rtxtDapAn3.Size = new System.Drawing.Size(1309, 28);
-            this.rtxtDapAn3.TabIndex = 31;
-            this.rtxtDapAn3.Click += new System.EventHandler(this.XulycheckTextBox);
-            // 
-            // rtxtDapAn4
-            // 
-            this.rtxtDapAn4.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtxtDapAn4.Location = new System.Drawing.Point(26, 601);
-            this.rtxtDapAn4.Name = "rtxtDapAn4";
-            this.rtxtDapAn4.ReadOnly = true;
-            this.rtxtDapAn4.Size = new System.Drawing.Size(1309, 28);
-            this.rtxtDapAn4.TabIndex = 30;
-            this.rtxtDapAn4.Click += new System.EventHandler(this.XulycheckTextBox);
-            // 
-            // rtxtDapAn1
-            // 
-            this.rtxtDapAn1.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtxtDapAn1.Location = new System.Drawing.Point(26, 398);
-            this.rtxtDapAn1.Name = "rtxtDapAn1";
-            this.rtxtDapAn1.ReadOnly = true;
-            this.rtxtDapAn1.Size = new System.Drawing.Size(1309, 28);
-            this.rtxtDapAn1.TabIndex = 29;
-            this.rtxtDapAn1.Click += new System.EventHandler(this.XulycheckTextBox);
-            // 
-            // rtxtDapAn2
-            // 
-            this.rtxtDapAn2.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtxtDapAn2.Location = new System.Drawing.Point(26, 467);
-            this.rtxtDapAn2.Name = "rtxtDapAn2";
-            this.rtxtDapAn2.ReadOnly = true;
-            this.rtxtDapAn2.Size = new System.Drawing.Size(1309, 28);
-            this.rtxtDapAn2.TabIndex = 28;
-            this.rtxtDapAn2.Click += new System.EventHandler(this.XulycheckTextBox);
-            // 
             // rtxtDeBai
             // 
             this.rtxtDeBai.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.rtxtDeBai.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtxtDeBai.Location = new System.Drawing.Point(3, 313);
+            this.rtxtDeBai.Location = new System.Drawing.Point(3, 292);
             this.rtxtDeBai.Name = "rtxtDeBai";
-            this.rtxtDeBai.Size = new System.Drawing.Size(1332, 68);
+            this.rtxtDeBai.Size = new System.Drawing.Size(1332, 90);
             this.rtxtDeBai.TabIndex = 27;
             this.rtxtDeBai.Text = "";
             // 
             // pictureBox1
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(294, 13);
+            this.pictureBox1.Location = new System.Drawing.Point(338, 4);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(709, 279);
+            this.pictureBox1.Size = new System.Drawing.Size(689, 281);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 26;
             this.pictureBox1.TabStop = false;
@@ -459,35 +423,43 @@
             // rbDapAn4
             // 
             this.rbDapAn4.AutoSize = true;
-            this.rbDapAn4.Location = new System.Drawing.Point(3, 607);
+            this.rbDapAn4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbDapAn4.Location = new System.Drawing.Point(3, 631);
             this.rbDapAn4.Name = "rbDapAn4";
-            this.rbDapAn4.Size = new System.Drawing.Size(17, 16);
+            this.rbDapAn4.Size = new System.Drawing.Size(44, 29);
             this.rbDapAn4.TabIndex = 23;
             this.rbDapAn4.TabStop = true;
+            this.rbDapAn4.Text = "4";
             this.rbDapAn4.UseVisualStyleBackColor = true;
+            this.rbDapAn4.CheckedChanged += new System.EventHandler(this.TomauCauHoi);
             this.rbDapAn4.DockChanged += new System.EventHandler(this.TomauCauHoi);
             this.rbDapAn4.Click += new System.EventHandler(this.XulyClickRadio);
             // 
             // rbDapAn3
             // 
             this.rbDapAn3.AutoSize = true;
-            this.rbDapAn3.Location = new System.Drawing.Point(3, 535);
+            this.rbDapAn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbDapAn3.Location = new System.Drawing.Point(3, 552);
             this.rbDapAn3.Name = "rbDapAn3";
-            this.rbDapAn3.Size = new System.Drawing.Size(17, 16);
+            this.rbDapAn3.Size = new System.Drawing.Size(44, 29);
             this.rbDapAn3.TabIndex = 22;
             this.rbDapAn3.TabStop = true;
+            this.rbDapAn3.Text = "3";
             this.rbDapAn3.UseVisualStyleBackColor = true;
+            this.rbDapAn3.CheckedChanged += new System.EventHandler(this.TomauCauHoi);
             this.rbDapAn3.DockChanged += new System.EventHandler(this.TomauCauHoi);
             this.rbDapAn3.Click += new System.EventHandler(this.XulyClickRadio);
             // 
             // rbDapAn2
             // 
             this.rbDapAn2.AutoSize = true;
-            this.rbDapAn2.Location = new System.Drawing.Point(3, 470);
+            this.rbDapAn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbDapAn2.Location = new System.Drawing.Point(3, 477);
             this.rbDapAn2.Name = "rbDapAn2";
-            this.rbDapAn2.Size = new System.Drawing.Size(17, 16);
+            this.rbDapAn2.Size = new System.Drawing.Size(44, 29);
             this.rbDapAn2.TabIndex = 21;
             this.rbDapAn2.TabStop = true;
+            this.rbDapAn2.Text = "2";
             this.rbDapAn2.UseVisualStyleBackColor = true;
             this.rbDapAn2.CheckedChanged += new System.EventHandler(this.TomauCauHoi);
             this.rbDapAn2.Click += new System.EventHandler(this.XulyClickRadio);
@@ -495,11 +467,13 @@
             // rbDapAn1
             // 
             this.rbDapAn1.AutoSize = true;
-            this.rbDapAn1.Location = new System.Drawing.Point(3, 401);
+            this.rbDapAn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbDapAn1.Location = new System.Drawing.Point(3, 402);
             this.rbDapAn1.Name = "rbDapAn1";
-            this.rbDapAn1.Size = new System.Drawing.Size(17, 16);
+            this.rbDapAn1.Size = new System.Drawing.Size(44, 29);
             this.rbDapAn1.TabIndex = 20;
             this.rbDapAn1.TabStop = true;
+            this.rbDapAn1.Text = "1";
             this.rbDapAn1.UseVisualStyleBackColor = true;
             this.rbDapAn1.CheckedChanged += new System.EventHandler(this.TomauCauHoi);
             this.rbDapAn1.Click += new System.EventHandler(this.XulyClickRadio);
@@ -712,6 +686,56 @@
             this.panelGridcontrol.TabIndex = 12;
             this.panelGridcontrol.Visible = false;
             // 
+            // rtxtDapAn1
+            // 
+            this.rtxtDapAn1.BackColor = System.Drawing.SystemColors.Menu;
+            this.rtxtDapAn1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtxtDapAn1.Location = new System.Drawing.Point(53, 388);
+            this.rtxtDapAn1.Name = "rtxtDapAn1";
+            this.rtxtDapAn1.Size = new System.Drawing.Size(1282, 61);
+            this.rtxtDapAn1.TabIndex = 28;
+            this.rtxtDapAn1.Text = "";
+            this.rtxtDapAn1.Click += new System.EventHandler(this.XulycheckTextBox);
+            // 
+            // rtxtDapAn2
+            // 
+            this.rtxtDapAn2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtxtDapAn2.Location = new System.Drawing.Point(53, 465);
+            this.rtxtDapAn2.Name = "rtxtDapAn2";
+            this.rtxtDapAn2.Size = new System.Drawing.Size(1282, 58);
+            this.rtxtDapAn2.TabIndex = 29;
+            this.rtxtDapAn2.Text = "";
+            this.rtxtDapAn2.Click += new System.EventHandler(this.XulycheckTextBox);
+            // 
+            // rtxtDapAn3
+            // 
+            this.rtxtDapAn3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtxtDapAn3.Location = new System.Drawing.Point(53, 539);
+            this.rtxtDapAn3.Name = "rtxtDapAn3";
+            this.rtxtDapAn3.Size = new System.Drawing.Size(1282, 60);
+            this.rtxtDapAn3.TabIndex = 31;
+            this.rtxtDapAn3.Text = "";
+            this.rtxtDapAn3.Click += new System.EventHandler(this.XulycheckTextBox);
+            // 
+            // rtxtDapAn4
+            // 
+            this.rtxtDapAn4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtxtDapAn4.Location = new System.Drawing.Point(53, 616);
+            this.rtxtDapAn4.Name = "rtxtDapAn4";
+            this.rtxtDapAn4.Size = new System.Drawing.Size(1282, 55);
+            this.rtxtDapAn4.TabIndex = 30;
+            this.rtxtDapAn4.Text = "";
+            this.rtxtDapAn4.Click += new System.EventHandler(this.XulycheckTextBox);
+            // 
+            // textBox1
+            // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Location = new System.Drawing.Point(3, 13);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(225, 15);
+            this.textBox1.TabIndex = 32;
+            this.textBox1.Text = "Lưu ý: Câu có dấu * là câu hỏi liệt";
+            // 
             // BatDauThi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -779,10 +803,6 @@
         private System.Windows.Forms.RadioButton rbDapAn3;
         private System.Windows.Forms.RadioButton rbDapAn2;
         private System.Windows.Forms.RadioButton rbDapAn1;
-        private System.Windows.Forms.TextBox rtxtDapAn3;
-        private System.Windows.Forms.TextBox rtxtDapAn4;
-        private System.Windows.Forms.TextBox rtxtDapAn1;
-        private System.Windows.Forms.TextBox rtxtDapAn2;
         private System.Windows.Forms.BindingSource dsBangcauhoiBindingSource;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
@@ -801,5 +821,10 @@
         private System.Windows.Forms.Label labelCauLiet;
         private System.Windows.Forms.TextBox txtCauLiet;
         private System.Windows.Forms.Panel panelGridcontrol;
+        private System.Windows.Forms.RichTextBox rtxtDapAn3;
+        private System.Windows.Forms.RichTextBox rtxtDapAn4;
+        private System.Windows.Forms.RichTextBox rtxtDapAn2;
+        private System.Windows.Forms.RichTextBox rtxtDapAn1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
