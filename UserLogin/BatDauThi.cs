@@ -498,6 +498,7 @@ namespace UserLogin
                 string path = $@"D:\VisualStudio\C#\Winform_App_thi_trac_nghiem\Excel_File\KetQuaThingay{DateTime.Now.Day}thang{DateTime.Now.Month}nam{DateTime.Now.Year}.xlsx";
                 XuatExcel(dataTable, path);
                 this.Close();
+               
             }
            
         }
