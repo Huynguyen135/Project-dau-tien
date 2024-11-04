@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DeThiTracNghiemModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="BangThi">
+    <Key>
+      <PropertyRef Name="IdBangThi" />
+    </Key>
+    <Property Name="IdBangThi" Type="nvarchar" MaxLength="2" Nullable="false" />
+    <Property Name="TenBangThi" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="GioThi" Type="datetime" Nullable="false" />
+    <Property Name="HinhThuc" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="ThoiGian" Type="time" Precision="7" />
+  </EntityType>
+  <EntityType Name="CauHoi">
+    <Key>
+      <PropertyRef Name="IdCauHoi" />
+    </Key>
+    <Property Name="IdCauHoi" Type="nvarchar" MaxLength="6" Nullable="false" />
+    <Property Name="Debai" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="DapAn1" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="DapAn2" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="DapAn3" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="DapAn4" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="HinhAnh" Type="nvarchar(max)" />
+    <Property Name="LoaiCauHoi" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="DapAnDung" Type="tinyint" Nullable="false" />
+    <Property Name="IdBangThi" Type="nvarchar" MaxLength="2" />
+  </EntityType>
+  <EntityType Name="DapAn">
+    <Key>
+      <PropertyRef Name="IdDapAn" />
+    </Key>
+    <Property Name="IdDapAn" Type="nvarchar" MaxLength="8" Nullable="false" />
+    <Property Name="IdCauHoi" Type="nvarchar" MaxLength="6" />
+    <Property Name="CauDung" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="KetQuaThi">
+    <Key>
+      <PropertyRef Name="IDKetQua" />
+    </Key>
+    <Property Name="IDKetQua" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDNguoiDung" Type="int" />
+    <Property Name="IdBangThi" Type="nvarchar" MaxLength="2" />
+    <Property Name="SoCauDung" Type="int" />
+    <Property Name="SoCauSai" Type="int" />
+    <Property Name="ThoiGianLamBai" Type="time" Precision="7" />
+  </EntityType>
+  <EntityType Name="NguoiDung">
+    <Key>
+      <PropertyRef Name="IDNguoiDung" />
+    </Key>
+    <Property Name="IDNguoiDung" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Hoten" Type="nvarchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__CauHoi__IdBangTh__45F365D3">
+    <End Role="BangThi" Type="Self.BangThi" Multiplicity="0..1" />
+    <End Role="CauHoi" Type="Self.CauHoi" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BangThi">
+        <PropertyRef Name="IdBangThi" />
+      </Principal>
+      <Dependent Role="CauHoi">
+        <PropertyRef Name="IdBangThi" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DapAn__IdCauHoi__403A8C7D">
+    <End Role="CauHoi" Type="Self.CauHoi" Multiplicity="0..1" />
+    <End Role="DapAn" Type="Self.DapAn" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CauHoi">
+        <PropertyRef Name="IdCauHoi" />
+      </Principal>
+      <Dependent Role="DapAn">
+        <PropertyRef Name="IdCauHoi" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__KetQuaThi__IdBan__440B1D61">
+    <End Role="BangThi" Type="Self.BangThi" Multiplicity="0..1" />
+    <End Role="KetQuaThi" Type="Self.KetQuaThi" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BangThi">
+        <PropertyRef Name="IdBangThi" />
+      </Principal>
+      <Dependent Role="KetQuaThi">
+        <PropertyRef Name="IdBangThi" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__KetQuaThi__IDNgu__4316F928">
+    <End Role="NguoiDung" Type="Self.NguoiDung" Multiplicity="0..1" />
+    <End Role="KetQuaThi" Type="Self.KetQuaThi" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NguoiDung">
+        <PropertyRef Name="IDNguoiDung" />
+      </Principal>
+      <Dependent Role="KetQuaThi">
+        <PropertyRef Name="IDNguoiDung" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DeThiTracNghiemModelStoreContainer">
+    <EntitySet Name="BangThi" EntityType="Self.BangThi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CauHoi" EntityType="Self.CauHoi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DapAn" EntityType="Self.DapAn" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KetQuaThi" EntityType="Self.KetQuaThi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NguoiDung" EntityType="Self.NguoiDung" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__CauHoi__IdBangTh__45F365D3" Association="Self.FK__CauHoi__IdBangTh__45F365D3">
+      <End Role="BangThi" EntitySet="BangThi" />
+      <End Role="CauHoi" EntitySet="CauHoi" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DapAn__IdCauHoi__403A8C7D" Association="Self.FK__DapAn__IdCauHoi__403A8C7D">
+      <End Role="CauHoi" EntitySet="CauHoi" />
+      <End Role="DapAn" EntitySet="DapAn" />
+    </AssociationSet>
+    <AssociationSet Name="FK__KetQuaThi__IdBan__440B1D61" Association="Self.FK__KetQuaThi__IdBan__440B1D61">
+      <End Role="BangThi" EntitySet="BangThi" />
+      <End Role="KetQuaThi" EntitySet="KetQuaThi" />
+    </AssociationSet>
+    <AssociationSet Name="FK__KetQuaThi__IDNgu__4316F928" Association="Self.FK__KetQuaThi__IDNgu__4316F928">
+      <End Role="NguoiDung" EntitySet="NguoiDung" />
+      <End Role="KetQuaThi" EntitySet="KetQuaThi" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

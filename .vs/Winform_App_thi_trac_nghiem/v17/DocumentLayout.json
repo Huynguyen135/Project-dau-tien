@@ -1,0 +1,272 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{05753F6D-66B9-4A83-977B-31A2082AC09F}|SQLData\\SQLData.csproj|D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\sqldata\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05753F6D-66B9-4A83-977B-31A2082AC09F}|SQLData\\SQLData.csproj|solutionrelative:sqldata\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0F77FD2-FDC4-4B18-89EC-D0B61A6893D2}|SQLLogic\\SQLLogic.csproj|D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\sqllogic\\xuatketqua.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0F77FD2-FDC4-4B18-89EC-D0B61A6893D2}|SQLLogic\\SQLLogic.csproj|solutionrelative:sqllogic\\xuatketqua.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{095AFF0D-99FF-466D-B407-46337A03103E}|UserLogin\\UserLogin.csproj|D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\userlogin\\batdauthi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{095AFF0D-99FF-466D-B407-46337A03103E}|UserLogin\\UserLogin.csproj|solutionrelative:userlogin\\batdauthi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0F77FD2-FDC4-4B18-89EC-D0B61A6893D2}|SQLLogic\\SQLLogic.csproj|D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\sqllogic\\nhapdulieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0F77FD2-FDC4-4B18-89EC-D0B61A6893D2}|SQLLogic\\SQLLogic.csproj|solutionrelative:sqllogic\\nhapdulieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0F77FD2-FDC4-4B18-89EC-D0B61A6893D2}|SQLLogic\\SQLLogic.csproj|d:\\visualstudio\\c#\\winform_app_thi_trac_nghiem\\sqllogic\\nhapnguoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0F77FD2-FDC4-4B18-89EC-D0B61A6893D2}|SQLLogic\\SQLLogic.csproj|solutionrelative:sqllogic\\nhapnguoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0F77FD2-FDC4-4B18-89EC-D0B61A6893D2}|SQLLogic\\SQLLogic.csproj|D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\sqllogic\\xuatcauhoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0F77FD2-FDC4-4B18-89EC-D0B61A6893D2}|SQLLogic\\SQLLogic.csproj|solutionrelative:sqllogic\\xuatcauhoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AE84F7E-C43B-4CD2-868B-E39A346E8B74}|Winform_App_thi_trac_nghiem\\Winform_App_thi_trac_nghiem.csproj|d:\\visualstudio\\c#\\winform_app_thi_trac_nghiem\\winform_app_thi_trac_nghiem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AE84F7E-C43B-4CD2-868B-E39A346E8B74}|Winform_App_thi_trac_nghiem\\Winform_App_thi_trac_nghiem.csproj|solutionrelative:winform_app_thi_trac_nghiem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AE84F7E-C43B-4CD2-868B-E39A346E8B74}|Winform_App_thi_trac_nghiem\\Winform_App_thi_trac_nghiem.csproj|D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\winform_app_thi_trac_nghiem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9AE84F7E-C43B-4CD2-868B-E39A346E8B74}|Winform_App_thi_trac_nghiem\\Winform_App_thi_trac_nghiem.csproj|solutionrelative:winform_app_thi_trac_nghiem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05753F6D-66B9-4A83-977B-31A2082AC09F}|SQLData\\SQLData.csproj|d:\\visualstudio\\c#\\winform_app_thi_trac_nghiem\\sqldata\\laydulieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05753F6D-66B9-4A83-977B-31A2082AC09F}|SQLData\\SQLData.csproj|solutionrelative:sqldata\\laydulieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{095AFF0D-99FF-466D-B407-46337A03103E}|UserLogin\\UserLogin.csproj|D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\userlogin\\batdauthi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{095AFF0D-99FF-466D-B407-46337A03103E}|UserLogin\\UserLogin.csproj|solutionrelative:userlogin\\batdauthi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{095AFF0D-99FF-466D-B407-46337A03103E}|UserLogin\\UserLogin.csproj|D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\userlogin\\dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{095AFF0D-99FF-466D-B407-46337A03103E}|UserLogin\\UserLogin.csproj|solutionrelative:userlogin\\dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05753F6D-66B9-4A83-977B-31A2082AC09F}|SQLData\\SQLData.csproj|D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\sqldata\\dsbangcauhoi.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
+      "RelativeMoniker": "D:0:0:{05753F6D-66B9-4A83-977B-31A2082AC09F}|SQLData\\SQLData.csproj|solutionrelative:sqldata\\dsbangcauhoi.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{095AFF0D-99FF-466D-B407-46337A03103E}|UserLogin\\UserLogin.csproj|D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\userlogin\\dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{095AFF0D-99FF-466D-B407-46337A03103E}|UserLogin\\UserLogin.csproj|solutionrelative:userlogin\\dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{095AFF0D-99FF-466D-B407-46337A03103E}|UserLogin\\UserLogin.csproj|D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\userlogin\\batdauthi.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{095AFF0D-99FF-466D-B407-46337A03103E}|UserLogin\\UserLogin.csproj|solutionrelative:userlogin\\batdauthi.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Data.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\SQLData\\Data.cs",
+              "RelativeDocumentMoniker": "SQLData\\Data.cs",
+              "ToolTip": "D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\SQLData\\Data.cs",
+              "RelativeToolTip": "SQLData\\Data.cs",
+              "ViewState": "AgIAABYBAAAAAAAAAAAowCIBAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T12:52:11.401Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BatDauThi.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\UserLogin\\BatDauThi.cs",
+              "RelativeDocumentMoniker": "UserLogin\\BatDauThi.cs",
+              "ToolTip": "D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\UserLogin\\BatDauThi.cs",
+              "RelativeToolTip": "UserLogin\\BatDauThi.cs",
+              "ViewState": "AgIAAOQBAAAAAAAAAAAwwOcBAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T01:56:37.016Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BatDauThi.cs [Design]",
+              "DocumentMoniker": "D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\UserLogin\\BatDauThi.cs",
+              "RelativeDocumentMoniker": "UserLogin\\BatDauThi.cs",
+              "ToolTip": "D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\UserLogin\\BatDauThi.cs [Design]",
+              "RelativeToolTip": "UserLogin\\BatDauThi.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T01:56:34.873Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\Winform_App_thi_trac_nghiem\\Form1.cs",
+              "RelativeDocumentMoniker": "Winform_App_thi_trac_nghiem\\Form1.cs",
+              "ToolTip": "D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\Winform_App_thi_trac_nghiem\\Form1.cs [Design]",
+              "RelativeToolTip": "Winform_App_thi_trac_nghiem\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T15:06:53.813Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "XuatKetQua.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\SQLLogic\\XuatKetQua.cs",
+              "RelativeDocumentMoniker": "SQLLogic\\XuatKetQua.cs",
+              "ToolTip": "D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\SQLLogic\\XuatKetQua.cs",
+              "RelativeToolTip": "SQLLogic\\XuatKetQua.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwB0AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T09:07:46.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NhapNguoiDung.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\SQLLogic\\NhapNguoiDung.cs",
+              "RelativeDocumentMoniker": "SQLLogic\\NhapNguoiDung.cs",
+              "ToolTip": "D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\SQLLogic\\NhapNguoiDung.cs",
+              "RelativeToolTip": "SQLLogic\\NhapNguoiDung.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T05:54:20.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NhapDuLieu.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\SQLLogic\\NhapDuLieu.cs",
+              "RelativeDocumentMoniker": "SQLLogic\\NhapDuLieu.cs",
+              "ToolTip": "D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\SQLLogic\\NhapDuLieu.cs",
+              "RelativeToolTip": "SQLLogic\\NhapDuLieu.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwB8AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T09:23:23.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "XuatCauHoi.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\SQLLogic\\XuatCauHoi.cs",
+              "RelativeDocumentMoniker": "SQLLogic\\XuatCauHoi.cs",
+              "ToolTip": "D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\SQLLogic\\XuatCauHoi.cs",
+              "RelativeToolTip": "SQLLogic\\XuatCauHoi.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T06:17:31.336Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\Winform_App_thi_trac_nghiem\\Form1.cs",
+              "RelativeDocumentMoniker": "Winform_App_thi_trac_nghiem\\Form1.cs",
+              "ToolTip": "D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\Winform_App_thi_trac_nghiem\\Form1.cs",
+              "RelativeToolTip": "Winform_App_thi_trac_nghiem\\Form1.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAMwC0AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T09:21:49.413Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LayDuLieu.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\SQLData\\LayDuLieu.cs",
+              "RelativeDocumentMoniker": "SQLData\\LayDuLieu.cs",
+              "ToolTip": "D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\SQLData\\LayDuLieu.cs",
+              "RelativeToolTip": "SQLData\\LayDuLieu.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAYwIAAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T05:52:10.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "BatDauThi.Designer.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\UserLogin\\BatDauThi.Designer.cs",
+              "RelativeDocumentMoniker": "UserLogin\\BatDauThi.Designer.cs",
+              "ToolTip": "D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\UserLogin\\BatDauThi.Designer.cs",
+              "RelativeToolTip": "UserLogin\\BatDauThi.Designer.cs",
+              "ViewState": "AgIAAAQDAAAAAAAAAAAvwAUDAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T06:23:28.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DsBangcauhoi.xsd",
+              "DocumentMoniker": "D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\SQLData\\DsBangcauhoi.xsd",
+              "RelativeDocumentMoniker": "SQLData\\DsBangcauhoi.xsd",
+              "ToolTip": "D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\SQLData\\DsBangcauhoi.xsd",
+              "RelativeToolTip": "SQLData\\DsBangcauhoi.xsd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
+              "WhenOpened": "2024-11-02T07:26:03.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DangKy.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\UserLogin\\DangKy.cs",
+              "RelativeDocumentMoniker": "UserLogin\\DangKy.cs",
+              "ToolTip": "D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\UserLogin\\DangKy.cs",
+              "RelativeToolTip": "UserLogin\\DangKy.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAD4vyQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T03:18:37.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DangKy.cs [Design]",
+              "DocumentMoniker": "D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\UserLogin\\DangKy.cs",
+              "RelativeDocumentMoniker": "UserLogin\\DangKy.cs",
+              "ToolTip": "D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\UserLogin\\DangKy.cs [Design]",
+              "RelativeToolTip": "UserLogin\\DangKy.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T03:18:36.989Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 120,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

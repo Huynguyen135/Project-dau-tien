@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DeThiTracNghiemModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="BangThi">
+    <Key>
+      <PropertyRef Name="IdBangThi" />
+    </Key>
+    <Property Name="IdBangThi" Type="String" MaxLength="2" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TenBangThi" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="GioThi" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="HinhThuc" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ThoiGian" Type="Time" Precision="7" />
+    <NavigationProperty Name="CauHois" Relationship="Self.FK__CauHoi__IdBangTh__4222D4EF" FromRole="BangThi" ToRole="CauHoi" />
+    <NavigationProperty Name="NguoiDungs" Relationship="Self.FK__NguoiDung__IdBan__3A81B327" FromRole="BangThi" ToRole="NguoiDung" />
+  </EntityType>
+  <EntityType Name="CauHoi">
+    <Key>
+      <PropertyRef Name="IdCauHoi" />
+    </Key>
+    <Property Name="IdCauHoi" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Debai" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DapAn1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DapAn2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DapAn3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DapAn4" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="HinhAnh" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LoaiCauHoi" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DapAnDung" Type="Byte" Nullable="false" />
+    <Property Name="KetQuaBaiThi" Type="Byte" />
+    <Property Name="IdBangThi" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="KetQuaCauHoi" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="BangThi" Relationship="Self.FK__CauHoi__IdBangTh__4222D4EF" FromRole="CauHoi" ToRole="BangThi" />
+  </EntityType>
+  <EntityType Name="KetQuaThi">
+    <Key>
+      <PropertyRef Name="IDKetQua" />
+    </Key>
+    <Property Name="IDKetQua" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CCCD" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="SoCauDung" Type="Int32" />
+    <Property Name="SoCauSai" Type="Int32" />
+    <Property Name="TrangThai" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="NguoiDung" Relationship="Self.FK__KetQuaThi__CCCD__45F365D3" FromRole="KetQuaThi" ToRole="NguoiDung" />
+  </EntityType>
+  <EntityType Name="NguoiDung">
+    <Key>
+      <PropertyRef Name="CCCD" />
+    </Key>
+    <Property Name="CCCD" Type="String" MaxLength="12" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Hoten" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Tuoi" Type="Byte" />
+    <Property Name="IdBangThi" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="BangThi" Relationship="Self.FK__NguoiDung__IdBan__3A81B327" FromRole="NguoiDung" ToRole="BangThi" />
+    <NavigationProperty Name="KetQuaThis" Relationship="Self.FK__KetQuaThi__CCCD__45F365D3" FromRole="NguoiDung" ToRole="KetQuaThi" />
+  </EntityType>
+  <Association Name="FK__CauHoi__IdBangTh__4222D4EF">
+    <End Role="BangThi" Type="Self.BangThi" Multiplicity="0..1" />
+    <End Role="CauHoi" Type="Self.CauHoi" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BangThi">
+        <PropertyRef Name="IdBangThi" />
+      </Principal>
+      <Dependent Role="CauHoi">
+        <PropertyRef Name="IdBangThi" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__NguoiDung__IdBan__3A81B327">
+    <End Role="BangThi" Type="Self.BangThi" Multiplicity="0..1" />
+    <End Role="NguoiDung" Type="Self.NguoiDung" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BangThi">
+        <PropertyRef Name="IdBangThi" />
+      </Principal>
+      <Dependent Role="NguoiDung">
+        <PropertyRef Name="IdBangThi" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__KetQuaThi__CCCD__45F365D3">
+    <End Role="NguoiDung" Type="Self.NguoiDung" Multiplicity="0..1" />
+    <End Role="KetQuaThi" Type="Self.KetQuaThi" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NguoiDung">
+        <PropertyRef Name="CCCD" />
+      </Principal>
+      <Dependent Role="KetQuaThi">
+        <PropertyRef Name="CCCD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DeThiTracNghiemEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="BangThis" EntityType="Self.BangThi" />
+    <EntitySet Name="CauHois" EntityType="Self.CauHoi" />
+    <EntitySet Name="KetQuaThis" EntityType="Self.KetQuaThi" />
+    <EntitySet Name="NguoiDungs" EntityType="Self.NguoiDung" />
+    <AssociationSet Name="FK__CauHoi__IdBangTh__4222D4EF" Association="Self.FK__CauHoi__IdBangTh__4222D4EF">
+      <End Role="BangThi" EntitySet="BangThis" />
+      <End Role="CauHoi" EntitySet="CauHois" />
+    </AssociationSet>
+    <AssociationSet Name="FK__NguoiDung__IdBan__3A81B327" Association="Self.FK__NguoiDung__IdBan__3A81B327">
+      <End Role="BangThi" EntitySet="BangThis" />
+      <End Role="NguoiDung" EntitySet="NguoiDungs" />
+    </AssociationSet>
+    <AssociationSet Name="FK__KetQuaThi__CCCD__45F365D3" Association="Self.FK__KetQuaThi__CCCD__45F365D3">
+      <End Role="NguoiDung" EntitySet="NguoiDungs" />
+      <End Role="KetQuaThi" EntitySet="KetQuaThis" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
