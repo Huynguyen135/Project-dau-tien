@@ -50,6 +50,16 @@ namespace UserLogin
             txtHangxeThi.Text = bangthi.ToString();
             txtNgayThi.Text = date.ToString("dd/MM/yyyy");
         }
+        private void Luuketquabaithi()
+        {
+            string cccd = txtCCCD.Text;
+            DateTime dateTime = DateTime.Now;
+            int caudung = Convert.ToInt32(txtSoCauDung.Text);
+            int causai = Convert.ToInt32(txtSoCauSai.Text);
+            string Trangthai = labebKetQua.Text;
+
+            XuatKetQua.nhapketqua(cccd, dateTime, caudung, causai, Trangthai);
+        }
 
         private void BatDauThi_Load(object sender, EventArgs e)
         {
@@ -67,8 +77,6 @@ namespace UserLogin
             pos = 1;
            
             this.Cursor = Cursors.Default;
-          
-          
         }
 
         private void hienthidongho()
@@ -117,13 +125,7 @@ namespace UserLogin
                 timer1.Enabled = false;
                 MessageBox.Show("Đã hết thời gian làm bài", "thông báo", MessageBoxButtons.OK);
                 KetThucThi();
-                string cccd = txtCCCD.Text;
-                DateTime dateTime = DateTime.Now;
-                int caudung = Convert.ToInt32(txtSoCauDung.Text);
-                int causai = Convert.ToInt32(txtSoCauSai.Text);
-                string Trangthai = labebKetQua.Text;
-
-                XuatKetQua.nhapketqua(cccd, dateTime, caudung, causai, Trangthai);
+                Luuketquabaithi();
             }
             hienthidongho();
         }
@@ -498,17 +500,6 @@ namespace UserLogin
                 this.Close();
             }
            
-        }
-
-        private void Luuketquabaithi()
-        {
-            string cccd = txtCCCD.Text;
-            DateTime dateTime = DateTime.Now;
-            int caudung = Convert.ToInt32(txtSoCauDung.Text);
-            int causai = Convert.ToInt32(txtSoCauSai.Text);
-            string Trangthai = labebKetQua.Text;
-
-            XuatKetQua.nhapketqua(cccd, dateTime, caudung, causai, Trangthai);
         }
 
         public static void XuatExcel(DataTable dt, string path)

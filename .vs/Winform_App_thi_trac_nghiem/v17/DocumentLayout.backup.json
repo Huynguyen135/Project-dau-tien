@@ -3,7 +3,11 @@
   "WorkspaceRootPath": "D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{095AFF0D-99FF-466D-B407-46337A03103E}|UserLogin\\UserLogin.csproj|D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\userlogin\\batdauthi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9AE84F7E-C43B-4CD2-868B-E39A346E8B74}|Winform_App_thi_trac_nghiem\\Winform_App_thi_trac_nghiem.csproj|D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\winform_app_thi_trac_nghiem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9AE84F7E-C43B-4CD2-868B-E39A346E8B74}|Winform_App_thi_trac_nghiem\\Winform_App_thi_trac_nghiem.csproj|solutionrelative:winform_app_thi_trac_nghiem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{095AFF0D-99FF-466D-B407-46337A03103E}|UserLogin\\UserLogin.csproj|d:\\visualstudio\\c#\\winform_app_thi_trac_nghiem\\userlogin\\batdauthi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{095AFF0D-99FF-466D-B407-46337A03103E}|UserLogin\\UserLogin.csproj|solutionrelative:userlogin\\batdauthi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,12 +15,8 @@
       "RelativeMoniker": "D:0:0:{095AFF0D-99FF-466D-B407-46337A03103E}|UserLogin\\UserLogin.csproj|solutionrelative:userlogin\\batdauthi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05753F6D-66B9-4A83-977B-31A2082AC09F}|SQLData\\SQLData.csproj|d:\\visualstudio\\c#\\winform_app_thi_trac_nghiem\\sqldata\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{05753F6D-66B9-4A83-977B-31A2082AC09F}|SQLData\\SQLData.csproj|D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\sqldata\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{05753F6D-66B9-4A83-977B-31A2082AC09F}|SQLData\\SQLData.csproj|solutionrelative:sqldata\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9AE84F7E-C43B-4CD2-868B-E39A346E8B74}|Winform_App_thi_trac_nghiem\\Winform_App_thi_trac_nghiem.csproj|D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\winform_app_thi_trac_nghiem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9AE84F7E-C43B-4CD2-868B-E39A346E8B74}|Winform_App_thi_trac_nghiem\\Winform_App_thi_trac_nghiem.csproj|solutionrelative:winform_app_thi_trac_nghiem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D0F77FD2-FDC4-4B18-89EC-D0B61A6893D2}|SQLLogic\\SQLLogic.csproj|D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\sqllogic\\xuatketqua.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D0F77FD2-FDC4-4B18-89EC-D0B61A6893D2}|SQLLogic\\SQLLogic.csproj|D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\sqllogic\\xuatcauhoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D0F77FD2-FDC4-4B18-89EC-D0B61A6893D2}|SQLLogic\\SQLLogic.csproj|solutionrelative:sqllogic\\xuatcauhoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9AE84F7E-C43B-4CD2-868B-E39A346E8B74}|Winform_App_thi_trac_nghiem\\Winform_App_thi_trac_nghiem.csproj|D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\winform_app_thi_trac_nghiem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9AE84F7E-C43B-4CD2-868B-E39A346E8B74}|Winform_App_thi_trac_nghiem\\Winform_App_thi_trac_nghiem.csproj|solutionrelative:winform_app_thi_trac_nghiem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{05753F6D-66B9-4A83-977B-31A2082AC09F}|SQLData\\SQLData.csproj|D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\sqldata\\laydulieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -57,6 +53,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{095AFF0D-99FF-466D-B407-46337A03103E}|UserLogin\\UserLogin.csproj|D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\userlogin\\batdauthi.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{095AFF0D-99FF-466D-B407-46337A03103E}|UserLogin\\UserLogin.csproj|solutionrelative:userlogin\\batdauthi.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AE84F7E-C43B-4CD2-868B-E39A346E8B74}|Winform_App_thi_trac_nghiem\\Winform_App_thi_trac_nghiem.csproj|D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\Winform_App_thi_trac_nghiem\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AE84F7E-C43B-4CD2-868B-E39A346E8B74}|Winform_App_thi_trac_nghiem\\Winform_App_thi_trac_nghiem.csproj|solutionrelative:Winform_App_thi_trac_nghiem\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,11 +66,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Data.cs",
               "DocumentMoniker": "D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\SQLData\\Data.cs",
               "RelativeDocumentMoniker": "SQLData\\Data.cs",
@@ -79,18 +79,17 @@
               "ViewState": "AgIAABYBAAAAAAAAAAAowCIBAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-01T12:52:11.401Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "BatDauThi.cs",
               "DocumentMoniker": "D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\UserLogin\\BatDauThi.cs",
               "RelativeDocumentMoniker": "UserLogin\\BatDauThi.cs",
               "ToolTip": "D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\UserLogin\\BatDauThi.cs",
               "RelativeToolTip": "UserLogin\\BatDauThi.cs",
-              "ViewState": "AgIAAE0BAAAAAAAAAAAgwFsBAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAADgAAAAAAAAAAAAuwFAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-01T01:56:37.016Z",
               "IsPinned": true,
@@ -98,7 +97,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "BatDauThi.cs [Design]",
               "DocumentMoniker": "D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\UserLogin\\BatDauThi.cs",
               "RelativeDocumentMoniker": "UserLogin\\BatDauThi.cs",
@@ -106,12 +105,11 @@
               "RelativeToolTip": "UserLogin\\BatDauThi.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-01T01:56:34.873Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\Winform_App_thi_trac_nghiem\\Form1.cs",
               "RelativeDocumentMoniker": "Winform_App_thi_trac_nghiem\\Form1.cs",
@@ -176,7 +174,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "Form1.cs",
               "DocumentMoniker": "D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\Winform_App_thi_trac_nghiem\\Form1.cs",
               "RelativeDocumentMoniker": "Winform_App_thi_trac_nghiem\\Form1.cs",
@@ -189,7 +187,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "LayDuLieu.cs",
               "DocumentMoniker": "D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\SQLData\\LayDuLieu.cs",
               "RelativeDocumentMoniker": "SQLData\\LayDuLieu.cs",
@@ -201,7 +199,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "BatDauThi.Designer.cs",
               "DocumentMoniker": "D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\UserLogin\\BatDauThi.Designer.cs",
               "RelativeDocumentMoniker": "UserLogin\\BatDauThi.Designer.cs",
@@ -209,12 +207,11 @@
               "RelativeToolTip": "UserLogin\\BatDauThi.Designer.cs",
               "ViewState": "AgIAAAQDAAAAAAAAAAAvwAUDAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T06:23:28.995Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-03T06:23:28.995Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "DsBangcauhoi.xsd",
               "DocumentMoniker": "D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\SQLData\\DsBangcauhoi.xsd",
               "RelativeDocumentMoniker": "SQLData\\DsBangcauhoi.xsd",
@@ -225,7 +222,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "DangKy.cs",
               "DocumentMoniker": "D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\UserLogin\\DangKy.cs",
               "RelativeDocumentMoniker": "UserLogin\\DangKy.cs",
@@ -237,7 +234,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "DangKy.cs [Design]",
               "DocumentMoniker": "D:\\VisualStudio\\C#\\Winform_App_thi_trac_nghiem\\UserLogin\\DangKy.cs",
               "RelativeDocumentMoniker": "UserLogin\\DangKy.cs",
