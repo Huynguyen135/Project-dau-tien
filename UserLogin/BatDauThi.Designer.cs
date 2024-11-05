@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
@@ -56,6 +56,11 @@
             this.dataTable1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.listcauhoi = new DevExpress.XtraEditors.ListBoxControl();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.rtxtDapAn3 = new System.Windows.Forms.RichTextBox();
+            this.rtxtDapAn4 = new System.Windows.Forms.RichTextBox();
+            this.rtxtDapAn2 = new System.Windows.Forms.RichTextBox();
+            this.rtxtDapAn1 = new System.Windows.Forms.RichTextBox();
             this.rtxtDeBai = new System.Windows.Forms.RichTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.rbDapAn4 = new System.Windows.Forms.RadioButton();
@@ -79,11 +84,6 @@
             this.labelCauLiet = new System.Windows.Forms.Label();
             this.txtCauLiet = new System.Windows.Forms.TextBox();
             this.panelGridcontrol = new System.Windows.Forms.Panel();
-            this.rtxtDapAn1 = new System.Windows.Forms.RichTextBox();
-            this.rtxtDapAn2 = new System.Windows.Forms.RichTextBox();
-            this.rtxtDapAn3 = new System.Windows.Forms.RichTextBox();
-            this.rtxtDapAn4 = new System.Windows.Forms.RichTextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -399,9 +399,63 @@
             this.panel1.TabIndex = 5;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // textBox1
+            // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Location = new System.Drawing.Point(3, 13);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(225, 15);
+            this.textBox1.TabIndex = 32;
+            this.textBox1.Text = "Lưu ý: Câu hỏi có dấu * là câu hỏi liệt";
+            // 
+            // rtxtDapAn3
+            // 
+            this.rtxtDapAn3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.rtxtDapAn3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtxtDapAn3.Location = new System.Drawing.Point(53, 539);
+            this.rtxtDapAn3.Name = "rtxtDapAn3";
+            this.rtxtDapAn3.Size = new System.Drawing.Size(1282, 60);
+            this.rtxtDapAn3.TabIndex = 31;
+            this.rtxtDapAn3.Text = "";
+            this.rtxtDapAn3.Click += new System.EventHandler(this.XulycheckTextBox);
+            // 
+            // rtxtDapAn4
+            // 
+            this.rtxtDapAn4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.rtxtDapAn4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtxtDapAn4.Location = new System.Drawing.Point(53, 616);
+            this.rtxtDapAn4.Name = "rtxtDapAn4";
+            this.rtxtDapAn4.Size = new System.Drawing.Size(1282, 55);
+            this.rtxtDapAn4.TabIndex = 30;
+            this.rtxtDapAn4.Text = "";
+            this.rtxtDapAn4.Click += new System.EventHandler(this.XulycheckTextBox);
+            // 
+            // rtxtDapAn2
+            // 
+            this.rtxtDapAn2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.rtxtDapAn2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtxtDapAn2.Location = new System.Drawing.Point(53, 465);
+            this.rtxtDapAn2.Name = "rtxtDapAn2";
+            this.rtxtDapAn2.Size = new System.Drawing.Size(1282, 58);
+            this.rtxtDapAn2.TabIndex = 29;
+            this.rtxtDapAn2.Text = "";
+            this.rtxtDapAn2.Click += new System.EventHandler(this.XulycheckTextBox);
+            // 
+            // rtxtDapAn1
+            // 
+            this.rtxtDapAn1.BackColor = System.Drawing.SystemColors.Menu;
+            this.rtxtDapAn1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.rtxtDapAn1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtxtDapAn1.Location = new System.Drawing.Point(53, 388);
+            this.rtxtDapAn1.Name = "rtxtDapAn1";
+            this.rtxtDapAn1.Size = new System.Drawing.Size(1282, 61);
+            this.rtxtDapAn1.TabIndex = 28;
+            this.rtxtDapAn1.Text = "";
+            this.rtxtDapAn1.Click += new System.EventHandler(this.XulycheckTextBox);
+            // 
             // rtxtDeBai
             // 
-            this.rtxtDeBai.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.rtxtDeBai.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rtxtDeBai.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtxtDeBai.Location = new System.Drawing.Point(3, 292);
             this.rtxtDeBai.Name = "rtxtDeBai";
@@ -415,7 +469,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(338, 4);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(689, 281);
+            this.pictureBox1.Size = new System.Drawing.Size(684, 281);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 26;
             this.pictureBox1.TabStop = false;
@@ -424,7 +478,7 @@
             // 
             this.rbDapAn4.AutoSize = true;
             this.rbDapAn4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbDapAn4.Location = new System.Drawing.Point(3, 631);
+            this.rbDapAn4.Location = new System.Drawing.Point(3, 616);
             this.rbDapAn4.Name = "rbDapAn4";
             this.rbDapAn4.Size = new System.Drawing.Size(44, 29);
             this.rbDapAn4.TabIndex = 23;
@@ -439,7 +493,7 @@
             // 
             this.rbDapAn3.AutoSize = true;
             this.rbDapAn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbDapAn3.Location = new System.Drawing.Point(3, 552);
+            this.rbDapAn3.Location = new System.Drawing.Point(3, 539);
             this.rbDapAn3.Name = "rbDapAn3";
             this.rbDapAn3.Size = new System.Drawing.Size(44, 29);
             this.rbDapAn3.TabIndex = 22;
@@ -454,7 +508,7 @@
             // 
             this.rbDapAn2.AutoSize = true;
             this.rbDapAn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbDapAn2.Location = new System.Drawing.Point(3, 477);
+            this.rbDapAn2.Location = new System.Drawing.Point(3, 465);
             this.rbDapAn2.Name = "rbDapAn2";
             this.rbDapAn2.Size = new System.Drawing.Size(44, 29);
             this.rbDapAn2.TabIndex = 21;
@@ -468,7 +522,7 @@
             // 
             this.rbDapAn1.AutoSize = true;
             this.rbDapAn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbDapAn1.Location = new System.Drawing.Point(3, 402);
+            this.rbDapAn1.Location = new System.Drawing.Point(3, 388);
             this.rbDapAn1.Name = "rbDapAn1";
             this.rbDapAn1.Size = new System.Drawing.Size(44, 29);
             this.rbDapAn1.TabIndex = 20;
@@ -484,9 +538,9 @@
             this.gridControl1.DataSource = this.dsBangcauhoiBindingSource;
             this.gridControl1.Dock = System.Windows.Forms.DockStyle.Left;
             this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4);
-            gridLevelNode1.RelationName = "Level1";
+            gridLevelNode2.RelationName = "Level1";
             this.gridControl1.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode1});
+            gridLevelNode2});
             this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Margin = new System.Windows.Forms.Padding(4);
@@ -685,56 +739,6 @@
             this.panelGridcontrol.Size = new System.Drawing.Size(995, 203);
             this.panelGridcontrol.TabIndex = 12;
             this.panelGridcontrol.Visible = false;
-            // 
-            // rtxtDapAn1
-            // 
-            this.rtxtDapAn1.BackColor = System.Drawing.SystemColors.Menu;
-            this.rtxtDapAn1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtxtDapAn1.Location = new System.Drawing.Point(53, 388);
-            this.rtxtDapAn1.Name = "rtxtDapAn1";
-            this.rtxtDapAn1.Size = new System.Drawing.Size(1282, 61);
-            this.rtxtDapAn1.TabIndex = 28;
-            this.rtxtDapAn1.Text = "";
-            this.rtxtDapAn1.Click += new System.EventHandler(this.XulycheckTextBox);
-            // 
-            // rtxtDapAn2
-            // 
-            this.rtxtDapAn2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtxtDapAn2.Location = new System.Drawing.Point(53, 465);
-            this.rtxtDapAn2.Name = "rtxtDapAn2";
-            this.rtxtDapAn2.Size = new System.Drawing.Size(1282, 58);
-            this.rtxtDapAn2.TabIndex = 29;
-            this.rtxtDapAn2.Text = "";
-            this.rtxtDapAn2.Click += new System.EventHandler(this.XulycheckTextBox);
-            // 
-            // rtxtDapAn3
-            // 
-            this.rtxtDapAn3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtxtDapAn3.Location = new System.Drawing.Point(53, 539);
-            this.rtxtDapAn3.Name = "rtxtDapAn3";
-            this.rtxtDapAn3.Size = new System.Drawing.Size(1282, 60);
-            this.rtxtDapAn3.TabIndex = 31;
-            this.rtxtDapAn3.Text = "";
-            this.rtxtDapAn3.Click += new System.EventHandler(this.XulycheckTextBox);
-            // 
-            // rtxtDapAn4
-            // 
-            this.rtxtDapAn4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtxtDapAn4.Location = new System.Drawing.Point(53, 616);
-            this.rtxtDapAn4.Name = "rtxtDapAn4";
-            this.rtxtDapAn4.Size = new System.Drawing.Size(1282, 55);
-            this.rtxtDapAn4.TabIndex = 30;
-            this.rtxtDapAn4.Text = "";
-            this.rtxtDapAn4.Click += new System.EventHandler(this.XulycheckTextBox);
-            // 
-            // textBox1
-            // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(3, 13);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(225, 15);
-            this.textBox1.TabIndex = 32;
-            this.textBox1.Text = "Lưu ý: Câu có dấu * là câu hỏi liệt";
             // 
             // BatDauThi
             // 

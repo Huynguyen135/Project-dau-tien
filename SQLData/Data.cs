@@ -1,16 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing;
 using System.IO;
 using NDatabase;
-using NFunction;
-using System.Runtime.CompilerServices;
 
 namespace SQLData
 {
@@ -267,27 +261,7 @@ namespace SQLData
         //end of vung thao tac du lieu 
 
         //vung xuat du lieu, ket qua
-        public static DataTable Xuatdulieuketquathi()
-        {
-            string sql = "select * from KetQuaThi";
-            DataTable dt = new DataTable();
-            try
-            {
-                using (SqlCommand sqlcmd = new SqlCommand(sql, connect))
-                {
-                    sqlcmd.CommandText = sql;
-                    SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sqlcmd);
-                    sqlDataAdapter.Fill(dt);
-                    return dt;
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Lỗi: {ex.Message}");
-                return dt;
-            }
-        }
-
+       
         public static DataTable Xuatketquatheodate(DateTime date)
         {
             string sql = "select * from KetQuaThi WHERE CAST(NgayThi AS DATE) = CAST(@ngaythi AS DATE)";

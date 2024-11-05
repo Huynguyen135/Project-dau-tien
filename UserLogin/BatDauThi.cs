@@ -20,7 +20,7 @@ namespace UserLogin
         static ClassDatabase clsData = new ClassDatabase();
         static ClassFunction clsFunction = new ClassFunction();
         public static DataTable dtTracnghiem = new DataTable();
-        public static int tongcauhoitrongdb = 50;
+        public static int tongcauhoitrongdb = 100;
         public static int tongsocauhoi = 25;
 
         int thoigian = 20;

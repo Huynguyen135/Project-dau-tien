@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data;
-using System.Data.SqlClient;
+﻿using System.Data;
 using SQLData;
 using System.Drawing;
 
@@ -29,7 +23,7 @@ namespace SQLLogic
 
         public static DataTable xuatketquathi()
         {
-            return Data.Xuatdulieuketquathi();
+            return Data.Xuatketqua();
         }
 
         public static int nhapCauhoi(int idcauhoi, string debai, string dapan1, string dapan2, string dapan3, string dapan4, string hinhanh, string loaicauhoi, string idbangthi, byte dapandung, byte dapannguoidung)

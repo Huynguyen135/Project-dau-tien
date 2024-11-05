@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using SQLData;
-using NDatabase;
+﻿using SQLData;
 namespace SQLLogic
 {
     public class XuatCauHoi
@@ -14,11 +7,6 @@ namespace SQLLogic
         {
             return Data.taoketnoi();
         }
-        //public static void nhapcauhoiThi(DataTable dtTracnghiem, ClassDatabase clsData, int tongsocauhoi, int tongcauhoitrongdb, int[] dscauhoi)
-        //{
-        //    Data.XuatCauhoi(dtTracnghiem, clsData, tongsocauhoi, tongcauhoitrongdb, dscauhoi);
-        //}
-
         public static bool ketnoidata()
         {
             return Data.ketnoiNdata();

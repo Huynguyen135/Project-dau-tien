@@ -26,16 +26,12 @@ F:\cong nghe NET\Winform_App_thi_trac_nghiem\Winform_App_thi_trac_nghiem\SQLData
 F:\cong nghe NET\Winform_App_thi_trac_nghiem\Winform_App_thi_trac_nghiem\SQLData\obj\Debug\SQLData.csproj.Up2Date
 F:\cong nghe NET\Winform_App_thi_trac_nghiem\Winform_App_thi_trac_nghiem\SQLData\obj\Debug\SQLData.dll
 F:\cong nghe NET\Winform_App_thi_trac_nghiem\Winform_App_thi_trac_nghiem\SQLData\obj\Debug\SQLData.pdb
-D:\VisualStudio\C#\Winform_App_thi_trac_nghiem\SQLData\bin\Debug\EPPlus.dll
-D:\VisualStudio\C#\Winform_App_thi_trac_nghiem\SQLData\bin\Debug\EPPlus.Interfaces.dll
-D:\VisualStudio\C#\Winform_App_thi_trac_nghiem\SQLData\bin\Debug\EPPlus.System.Drawing.dll
 D:\VisualStudio\C#\Winform_App_thi_trac_nghiem\SQLData\bin\Debug\Microsoft.IO.RecyclableMemoryStream.dll
 D:\VisualStudio\C#\Winform_App_thi_trac_nghiem\SQLData\bin\Debug\System.Buffers.dll
 D:\VisualStudio\C#\Winform_App_thi_trac_nghiem\SQLData\bin\Debug\System.ComponentModel.Annotations.dll
 D:\VisualStudio\C#\Winform_App_thi_trac_nghiem\SQLData\bin\Debug\System.Memory.dll
 D:\VisualStudio\C#\Winform_App_thi_trac_nghiem\SQLData\bin\Debug\System.Numerics.Vectors.dll
 D:\VisualStudio\C#\Winform_App_thi_trac_nghiem\SQLData\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-D:\VisualStudio\C#\Winform_App_thi_trac_nghiem\SQLData\bin\Debug\EPPlus.xml
 D:\VisualStudio\C#\Winform_App_thi_trac_nghiem\SQLData\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml
 D:\VisualStudio\C#\Winform_App_thi_trac_nghiem\SQLData\bin\Debug\System.Buffers.xml
 D:\VisualStudio\C#\Winform_App_thi_trac_nghiem\SQLData\bin\Debug\System.Memory.xml
