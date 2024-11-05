@@ -38,7 +38,7 @@ Hướng dẫn setup:
          return true;
    
        }
-        chú ý: phần Data Source và Password là mẫu để bạn nhập theo, đừng copy và dán vào đoạn code mà không chỉnh sửa lại. tương tự như vậy đối với SSevername và SPassword
+      chú ý: phần Data Source và Password là mẫu để bạn nhập theo, đừng copy và dán vào đoạn code mà không chỉnh sửa lại. tương tự như vậy đối với SSevername và SPassword
 
       ở class LayDuLieu.cs bạn cũng làm y như vậy, nhưng đừng paste đoạn mã ketnoiNdata vào nha :)))      
 
