@@ -51,7 +51,8 @@ Hướng dẫn setup:
    -  lúc này, ta cần chỉnh sửa lại cấu trúc đường lưu như sau: @"C:\tenfileA\tenfilec\CauHoi1.xlsx"
    -  lưu ý: CauHoi1.xlsx là tên của file chứa dũ liệu câu hỏi, vui lòng không chỉnh sửa tên
    -  sau khi chỉnh sửa xong, chúng ta thực hiện chạy chương trình 
-   -  sau khi chạy chương trình thì thứ mà ta quan tâm là nút nhập file trong cột này: ![alt text](image-2.png)
+   -  sau khi chạy chương trình thì thứ mà ta quan tâm là nút nhập file trong cột này:
+   -  ![alt text](image-2.png)
    -  sau khi nhấn nút nhập file thì nó sẽ hiện ra bảng thông báo nhập thành công, nếu nó không hiện hoặc nó hiện thông báo lỗi thì bạn hãy kiểm tra laij đường lưu
    -  sau khi nhập thành công thì ở dưới phần datagridview sẽ hiện ra danh sách câu hỏi. Lúc này bạn cần bấm vào nút "xử lí null" để thực hiện xóa những câu có đáp án 
       là null nhằm đảm bảo bài thi hoạt động trơn tru.
