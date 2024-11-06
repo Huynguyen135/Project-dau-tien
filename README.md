@@ -8,7 +8,7 @@ Hướng dẫn setup:
 
 2. tạo database
    -  Ở phần Connect to Server, chọn SQL Server Authentication để kết nối bằng tài khoản sa.
-   -  Nếu bạn không có tài khoản sa hoặc không biết cách thiết lập, hãy tham khảo video này:[ Cách thiết lập tài khoản sa.](https://youtu.be/ftVcBoZRAMA?si=OCTVIVL-6kRk6XG-)
+   -  Nếu bạn không có tài khoản sa vàvà không biết cách thiết lập, hãy tham khảo video này:[ Cách thiết lập tài khoản sa.](https://youtu.be/ftVcBoZRAMA?si=OCTVIVL-6kRk6XG-)
   
    -  Sau khi kết nối thành công, vào mục Database.
    -  Tìm và mở file Query như hình minh họa: ![alt text](image-1.png).
@@ -53,7 +53,7 @@ Hướng dẫn setup:
    -  sau khi chỉnh sửa xong, chúng ta thực hiện chạy chương trình 
    -  sau khi chạy chương trình thì thứ mà ta quan tâm là nút nhập file trong cột này:
    -  ![alt text](image-2.png)
-   -  sau khi nhấn nút nhập file thì nó sẽ hiện ra bảng thông báo nhập thành công, nếu nó không hiện hoặc nó hiện thông báo lỗi thì bạn hãy kiểm tra laij đường lưu
+   -  sau khi nhấn nút nhập file thì nó sẽ hiện ra bảng thông báo nhập thành công, nếu nó không hiện hoặc nó hiện thông báo lỗi thì bạn hãy kiểm tra lại đường lưu
    -  sau khi nhập thành công thì ở dưới phần datagridview sẽ hiện ra danh sách câu hỏi. Lúc này bạn cần bấm vào nút "xử lí null" để thực hiện xóa những câu có đáp án 
       là null nhằm đảm bảo bài thi hoạt động trơn tru.
       
