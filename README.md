@@ -25,6 +25,7 @@ Hướng dẫn setup:
 
    -  public static string chuoiketnoi = "Data Source=Maychucuaban;Initial Catalog=DeThiTracNghiem;User ID=sa;Password=matkhaucuaban";
           
+<<<<<<< HEAD
    -    public static Boolean ketnoiNdata()
    -   {
    -      clsData = new ClassDatabase();
@@ -38,6 +39,22 @@ Hướng dẫn setup:
    -     return true;
    -   }
    -    chú ý: phần Data Source và Password là mẫu để bạn nhập theo, đừng copy và dán vào đoạn code mà không chỉnh sửa lại. tương tự như vậy đối với SSevername và SPassword
+=======
+       public static Boolean ketnoiNdata()
+      {
+          clsData = new ClassDatabase();
+          if(clsData.cnConnect != null)
+          {
+             clsData.SServerName = "Maychucuaban";
+             clsData.SDatabase = "DeThiTracNghiem";
+             clsData.SUsername = "sa";
+              clsData.SPassword = "matkhaucuaban";
+           }
+         return true;
+   
+       }
+      chú ý: phần Data Source và Password là mẫu để bạn nhập theo, đừng copy và dán vào đoạn code mà không chỉnh sửa lại. tương tự như vậy đối với SSevername và SPassword
+>>>>>>> 3ef6eba2fca39984b851e852f80c89611541b9b8
 
    -   ở class LayDuLieu.cs bạn cũng làm y như vậy, nhưng đừng paste đoạn mã ketnoiNdata vào nha :)))      
 
