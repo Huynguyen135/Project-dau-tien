@@ -23,34 +23,34 @@ Hướng dẫn setup:
    -  vào project SQLData, ta sẽ có 2 class là: Data.cs và LayDuLieu.cs
    -  vào Data.cs, ta sẽ có 2 modun kết nối dữ liệu, tại đây bạn sẽ đổi lại kết nối theo cấu trúc như sau:
 
-      public static string chuoiketnoi = "Data Source=Maychucuaban;Initial Catalog=DeThiTracNghiem;User ID=sa;Password=matkhaucuaban";
+   -  public static string chuoiketnoi = "Data Source=Maychucuaban;Initial Catalog=DeThiTracNghiem;User ID=sa;Password=matkhaucuaban";
           
-       public static Boolean ketnoiNdata()
-      {
-          clsData = new ClassDatabase();
-          if(clsData.cnConnect != null)
-          {
-             clsData.SServerName = "Maychucuaban";
-             clsData.SDatabase = "DeThiTracNghiem";
-             clsData.SUsername = "sa";
-              clsData.SPassword = "matkhaucuaban";
-           }
-         return true;
-   
-       }
-        chú ý: phần Data Source và Password là mẫu để bạn nhập theo, đừng copy và dán vào đoạn code mà không chỉnh sửa lại. tương tự như vậy đối với SSevername và SPassword
+   -    public static Boolean ketnoiNdata()
+   -   {
+   -      clsData = new ClassDatabase();
+   -      if(clsData.cnConnect != null)
+   -      {
+   -         clsData.SServerName = "Maychucuaban";
+   -         clsData.SDatabase = "DeThiTracNghiem";
+   -         clsData.SUsername = "sa";
+   -         clsData.SPassword = "matkhaucuaban";
+   -       }
+   -     return true;
+   -   }
+   -    chú ý: phần Data Source và Password là mẫu để bạn nhập theo, đừng copy và dán vào đoạn code mà không chỉnh sửa lại. tương tự như vậy đối với SSevername và SPassword
 
-      ở class LayDuLieu.cs bạn cũng làm y như vậy, nhưng đừng paste đoạn mã ketnoiNdata vào nha :)))      
+   -   ở class LayDuLieu.cs bạn cũng làm y như vậy, nhưng đừng paste đoạn mã ketnoiNdata vào nha :)))      
 
 4. nhập dữ liệu vào Database
    -  sau khi đã hoàn thành các bước trên, ta sẽ đến với project project Winform_App_thi_trac_nghiem.
    -  ở trong project, ta sẽ thấy 1 cái form với tên Form1.cs.
    -  bấm vào file đó, ta sẽ thấy giao diện nhập dữ liệu câu hỏi.
    -  để đến phần code, ta hãy bấm vào 1 phần tử bất kì trong giao diện đó (khuyến nghị nên bấm vào nút "Nhập câu" trên giao diện)
+   
    -  sau khi bấm, đoạn code sẽ hiện ra và lúc này chúng ta sẽ thực hiện thao tác ở đoạn mã nhập file (nằm ở dòng 379)
    -  ở trong đoạn mã đó, phần tử filepath sẽ là phần tử chứa đường lưu đến file ecxel chứa dữ liệu câu hỏi
    -  lúc này, ta cần chỉnh sửa lại cấu trúc đường lưu như sau: @"C:\tenfileA\tenfilec\CauHoi1.xlsx"
-      lưu ý: CauHoi1.xlsx là tên của file chứa dũ liệu câu hỏi, vui lòng không chỉnh sửa tên
+   -  lưu ý: CauHoi1.xlsx là tên của file chứa dũ liệu câu hỏi, vui lòng không chỉnh sửa tên
    -  sau khi chỉnh sửa xong, chúng ta thực hiện chạy chương trình 
    -  sau khi chạy chương trình thì thứ mà ta quan tâm là nút nhập file trong cột này: ![alt text](image-2.png)
    -  sau khi nhấn nút nhập file thì nó sẽ hiện ra bảng thông báo nhập thành công, nếu nó không hiện hoặc nó hiện thông báo lỗi thì bạn hãy kiểm tra laij đường lưu
