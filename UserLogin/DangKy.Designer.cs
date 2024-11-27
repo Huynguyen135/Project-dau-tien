@@ -70,6 +70,7 @@
             this.txtTuoi.Name = "txtTuoi";
             this.txtTuoi.Size = new System.Drawing.Size(278, 29);
             this.txtTuoi.TabIndex = 11;
+            this.txtTuoi.TextChanged += new System.EventHandler(this.txtTuoi_TextChanged);
             // 
             // label4
             // 
@@ -82,6 +83,7 @@
             this.label4.Size = new System.Drawing.Size(62, 25);
             this.label4.TabIndex = 10;
             this.label4.Text = "Tuổi:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // txtCCCD
             // 
@@ -92,6 +94,7 @@
             this.txtCCCD.Name = "txtCCCD";
             this.txtCCCD.Size = new System.Drawing.Size(278, 29);
             this.txtCCCD.TabIndex = 9;
+            this.txtCCCD.TextChanged += new System.EventHandler(this.txtCCCD_TextChanged);
             // 
             // label6
             // 
@@ -103,6 +106,7 @@
             this.label6.Size = new System.Drawing.Size(88, 25);
             this.label6.TabIndex = 8;
             this.label6.Text = "CCCD: ";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // btnDangKi
             // 
@@ -138,6 +142,7 @@
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.Size = new System.Drawing.Size(278, 29);
             this.txtHoTen.TabIndex = 4;
+            this.txtHoTen.TextChanged += new System.EventHandler(this.txtHoTen_TextChanged);
             // 
             // label3
             // 
@@ -149,6 +154,7 @@
             this.label3.Size = new System.Drawing.Size(134, 25);
             this.label3.TabIndex = 2;
             this.label3.Text = "Hạng xe thi: ";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -160,6 +166,7 @@
             this.label2.Size = new System.Drawing.Size(117, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "Họ và tên: ";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -172,6 +179,7 @@
             this.label1.Size = new System.Drawing.Size(178, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Khung Đăng Kí Thi";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // DangKy
             // 
@@ -180,7 +188,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel3);
             this.Name = "DangKy";
-            this.Text = "DangKy";
+            this.Text = "Đăng ký thi";
             this.Load += new System.EventHandler(this.DangKy_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();

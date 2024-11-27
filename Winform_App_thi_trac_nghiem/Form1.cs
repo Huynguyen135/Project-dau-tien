@@ -6,15 +6,14 @@ using System.IO;
 using System.Windows.Forms;
 using SQLLogic;
 using OfficeOpenXml;
-
+using UserLogin;
 
 namespace Winform_App_thi_trac_nghiem
 {
     public partial class Form1 : Form
     {
         public static DataTable dtFrom = new DataTable();
-        public static DataTable dtFrom2 = new DataTable();
-
+       
         public Form1()
         {
             InitializeComponent();
@@ -24,7 +23,7 @@ namespace Winform_App_thi_trac_nghiem
         private void btnThoat_Click(object sender, EventArgs e)
         {
             var thoat = MessageBox.Show("chắc chắn là thoát chưa?", "chắc chưa", MessageBoxButtons.OKCancel);
-            if (thoat == DialogResult.OK) Application.Exit();
+            if (thoat == DialogResult.OK) this.Close();
 
         }
 
@@ -36,28 +35,14 @@ namespace Winform_App_thi_trac_nghiem
             if (!NhapDuLieu.kiemtra()) MessageBox.Show("Ket noi that bai");
 
             DataTable dt = NhapDuLieu.laydulieubangCauhoi();
-            DataTable dt2 = XuatKetQua.xuatketqua();
+          
             dtFrom = dt;
-            dtFrom2 = dt2;
 
             Taidanhsach();
-            TaiDanhSachKetQuaThi();
 
             dataGridView1.DataSource = dt;
             dataGridView1.AutoGenerateColumns = true;
             dataGridView1.Refresh();
-
-            dataGridView2.DataSource = dt2;
-            dataGridView2.AutoGenerateColumns = true;
-            dataGridView2.Refresh();
-
-            //ListViewItem item;
-            //DataTable cauhoi = Data.LaydulieuBangCauhoi();
-            //for(int i = 0; i < cauhoi.Rows.Count;i++)
-            //{
-            //    item = new ListViewItem(cauhoi.Rows[i][1].ToString());
-
-            //}
 
         }
 
@@ -95,13 +80,6 @@ namespace Winform_App_thi_trac_nghiem
             DataTable dt = NhapDuLieu.laydulieubangCauhoi();
             dtFrom = dt;
             dataGridView1.DataSource = dt;
-        }
-
-        private void TaiDanhSachKetQuaThi()
-        {
-            DataTable dt = XuatKetQua.xuatketqua();
-            dtFrom2 = dt;
-            dataGridView2.DataSource = dt;
         }
 
         public bool CheckValid()
@@ -191,49 +169,55 @@ namespace Winform_App_thi_trac_nghiem
                 }
             }
         }
-
-
-
         private void btnNhap_Click(object sender, EventArgs e)
         {
-            int idcauhoi = Convert.ToInt32(txtMaCau.Text);
-            string txtdebai = txtDeBai.Text;
-            string dapan1 = txtDapAn1.Text;
-            string dapan2 = txtDapAn2.Text;
-            string dapan3 = txtDapAn3.Text;
-            string dapan4 = txtDapAn4.Text;
-            byte dapandung = NhapDapandung();
-            string hinhanh;
-            if (rbCauHoiThuong.Checked && rbCauHoiLiet.Checked)
-            {
-                hinhanh = "null";
-            }
-            else
-            {
-                hinhanh = ImageToBase64(pictureBox.Image, System.Drawing.Imaging.ImageFormat.Png);
-            }
-
-            string idbangthi = NhapLoaiBang();
-            string loaicauhoi = NhapLoaiCauHoi();
-            byte dapannguoidung = 0;
             try
             {
-                int result = NhapDuLieu.nhapCauhoi(idcauhoi, txtdebai, dapan1, dapan2, dapan3, dapan4, hinhanh, loaicauhoi, idbangthi, dapandung, dapannguoidung);
-                if (result > 0)
+                int idcauhoi = Convert.ToInt32(txtMaCau.Text);
+                string txtdebai = txtDeBai.Text;
+                string dapan1 = txtDapAn1.Text;
+                string dapan2 = txtDapAn2.Text;
+                string dapan3 = txtDapAn3.Text;
+                string dapan4 = txtDapAn4.Text;
+                byte dapandung = NhapDapandung();
+                string hinhanh;
+                if (rbCauHoiThuong.Checked && rbCauHoiLiet.Checked)
                 {
-                    MessageBox.Show("Nhập thành công");
-                    Taidanhsach(); // Refresh lại danh sách
+                    hinhanh = "null";
                 }
                 else
                 {
-                    MessageBox.Show("Không thể nhập dữ liệu. Vui lòng kiểm tra lại!");
+                    hinhanh = ImageToBase64(pictureBox.Image, System.Drawing.Imaging.ImageFormat.Png);
                 }
+
+                string idbangthi = NhapLoaiBang();
+                string loaicauhoi = NhapLoaiCauHoi();
+                byte dapannguoidung = 0;
+                try
+                {
+                    int result = NhapDuLieu.nhapCauhoi(idcauhoi, txtdebai, dapan1, dapan2, dapan3, dapan4, hinhanh, loaicauhoi, idbangthi, dapandung, dapannguoidung);
+                    if (result > 0)
+                    {
+                        MessageBox.Show("Nhập thành công");
+                        Taidanhsach(); // Refresh lại danh sách
+                    }
+                    else
+                    {
+                        MessageBox.Show("Không thể nhập dữ liệu. Vui lòng kiểm tra lại!");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Lỗi khi lưu câu hỏi: {ex.Message}");
+                }
+
+
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 MessageBox.Show($"Lỗi khi lưu câu hỏi: {ex.Message}");
+                return;
             }
-
 
 
         }
@@ -308,13 +292,26 @@ namespace Winform_App_thi_trac_nghiem
         {
             txtDapAn4.Clear();
         }
+       
 
         private void btnXoaMaCau_Click(object sender, EventArgs e)
         {
-            txtMaCau.Clear();
+            var idcauhoi = Convert.ToInt32(txtMaCau.Text);
+            try
+            {
+                NhapDuLieu.xoacauhoi(idcauhoi);
+                
+                MessageBox.Show("xoa cau hoi thanh cong");
+                Taidanhsach();
+                lammoiCauhoi();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show($"loi khi xoa: {ex.Message}");
+                return;
+            }
         }
-
-        private void btnXoaCau_Click(object sender, EventArgs e)
+        void lammoiCauhoi()
         {
             txtMaCau.Focus();
             txtMaCau.Clear();
@@ -324,24 +321,20 @@ namespace Winform_App_thi_trac_nghiem
             txtDeBai.Clear();
             txtDapAn4.Clear();
             pictureBox.Image = null;
+            rbBangA1.Checked = false;
+            rbBangA2.Checked = false;
+            rbDapAn1.Checked = false;
+            rbDapAn2.Checked = false;
+            rbDapAn3.Checked = false;
+            rbDapAn4.Checked = false;
+            rbCauHoiThuong.Checked = false;
+            rbCauHoiLiet.Checked = false;
+            rbSaHinh.Checked = false;
         }
 
-        private void btnXuatExel_Click(object sender, EventArgs e)
+        private void btnXoaCau_Click(object sender, EventArgs e)
         {
-
-            DataTable dataTable = NhapDuLieu.laydulieubangCauhoi();
-            string filePath = @"D:\VisualStudio\C#\Winform_App_thi_trac_nghiem\Excel_file\CauHoi.xlsx";
-
-            try
-            {
-                XuatExcel(dataTable, filePath);
-                MessageBox.Show("Xuất file thành công");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Lỗi xuất file: {ex.Message}");
-            }
-
+            lammoiCauhoi();
         }
 
         public static void XuatExcel(DataTable dt, string path)
@@ -379,17 +372,7 @@ namespace Winform_App_thi_trac_nghiem
         private void btnNhapFile_Click(object sender, EventArgs e)
         {
 
-            var filepath = @"D:\VisualStudio\C#\Winform_App_thi_trac_nghiem\Excel_File\CauHoi1.xlsx";
-            try
-            {
-                NhapFileExel(filepath);
-                Taidanhsach();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Lỗi nhập file: " + ex.Message);
-            }
-
+           
         }
 
         public static void NhapFileExel(string excelFilePath)
@@ -495,14 +478,33 @@ namespace Winform_App_thi_trac_nghiem
 
 
         }
-        private void btnXuLiNull_Click(object sender, EventArgs e)
+ 
+        private void taiKhoanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Taikhoan taikhoan = new Taikhoan();
+            taikhoan.ShowDialog();
+        }
+
+        private void bắtĐầuThiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UserLogin.Form1 frm1 = new UserLogin.Form1();
+            frm1.ShowDialog();
+        }
+
+        private void xửLýĐápÁnNullToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             NhapDuLieu.xulinull();
             MessageBox.Show("Xử lí thành công");
             Taidanhsach();
         }
 
-        private void btnXuatKetQuaThi_Click(object sender, EventArgs e)
+        private void danhSáchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            danhsachketquathi dansach = new danhsachketquathi();
+            dansach.ShowDialog();
+        }
+
+        private void xuấtKếtQuảThiToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             DataTable dataTable = NhapDuLieu.xuatketquathi();
             string filePath = @"D:\VisualStudio\C#\Winform_App_thi_trac_nghiem\Excel_file\KetQuaThiCuaToanBoThiSinh.xlsx";
@@ -515,7 +517,37 @@ namespace Winform_App_thi_trac_nghiem
             {
                 MessageBox.Show($"Lỗi xuất file: {ex.Message}");
             }
+        }
 
+        private void nhậpDữLiệuCâuHỏiToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            var filepath = @"D:\VisualStudio\C#\Winform_App_thi_trac_nghiem\Excel_File\CauHoi1.xlsx";
+            try
+            {
+                NhapFileExel(filepath);
+                Taidanhsach();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi nhập file: " + ex.Message);
+            }
+
+        }
+
+        private void xuấtDữLiêuCâuHỏiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DataTable dataTable = NhapDuLieu.laydulieubangCauhoi();
+            string filePath = @"D:\VisualStudio\C#\Winform_App_thi_trac_nghiem\Excel_file\CauHoi.xlsx";
+
+            try
+            {
+                XuatExcel(dataTable, filePath);
+                MessageBox.Show("Xuất file thành công");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi xuất file: {ex.Message}");
+            }
         }
     }
 }

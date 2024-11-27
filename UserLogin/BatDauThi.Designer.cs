@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
@@ -404,16 +404,18 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Location = new System.Drawing.Point(3, 13);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(225, 15);
+            this.textBox1.Size = new System.Drawing.Size(246, 15);
             this.textBox1.TabIndex = 32;
             this.textBox1.Text = "Lưu ý: Câu hỏi có dấu * là câu hỏi liệt";
             // 
             // rtxtDapAn3
             // 
             this.rtxtDapAn3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.rtxtDapAn3.Cursor = System.Windows.Forms.Cursors.Default;
             this.rtxtDapAn3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtxtDapAn3.Location = new System.Drawing.Point(53, 539);
             this.rtxtDapAn3.Name = "rtxtDapAn3";
+            this.rtxtDapAn3.ReadOnly = true;
             this.rtxtDapAn3.Size = new System.Drawing.Size(1282, 60);
             this.rtxtDapAn3.TabIndex = 31;
             this.rtxtDapAn3.Text = "";
@@ -422,9 +424,11 @@
             // rtxtDapAn4
             // 
             this.rtxtDapAn4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.rtxtDapAn4.Cursor = System.Windows.Forms.Cursors.Default;
             this.rtxtDapAn4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtxtDapAn4.Location = new System.Drawing.Point(53, 616);
             this.rtxtDapAn4.Name = "rtxtDapAn4";
+            this.rtxtDapAn4.ReadOnly = true;
             this.rtxtDapAn4.Size = new System.Drawing.Size(1282, 55);
             this.rtxtDapAn4.TabIndex = 30;
             this.rtxtDapAn4.Text = "";
@@ -433,9 +437,11 @@
             // rtxtDapAn2
             // 
             this.rtxtDapAn2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.rtxtDapAn2.Cursor = System.Windows.Forms.Cursors.Default;
             this.rtxtDapAn2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtxtDapAn2.Location = new System.Drawing.Point(53, 465);
             this.rtxtDapAn2.Name = "rtxtDapAn2";
+            this.rtxtDapAn2.ReadOnly = true;
             this.rtxtDapAn2.Size = new System.Drawing.Size(1282, 58);
             this.rtxtDapAn2.TabIndex = 29;
             this.rtxtDapAn2.Text = "";
@@ -445,9 +451,11 @@
             // 
             this.rtxtDapAn1.BackColor = System.Drawing.SystemColors.Menu;
             this.rtxtDapAn1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.rtxtDapAn1.Cursor = System.Windows.Forms.Cursors.Default;
             this.rtxtDapAn1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtxtDapAn1.Location = new System.Drawing.Point(53, 388);
             this.rtxtDapAn1.Name = "rtxtDapAn1";
+            this.rtxtDapAn1.ReadOnly = true;
             this.rtxtDapAn1.Size = new System.Drawing.Size(1282, 61);
             this.rtxtDapAn1.TabIndex = 28;
             this.rtxtDapAn1.Text = "";
@@ -456,9 +464,11 @@
             // rtxtDeBai
             // 
             this.rtxtDeBai.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.rtxtDeBai.Cursor = System.Windows.Forms.Cursors.Default;
             this.rtxtDeBai.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtxtDeBai.Location = new System.Drawing.Point(3, 292);
             this.rtxtDeBai.Name = "rtxtDeBai";
+            this.rtxtDeBai.ReadOnly = true;
             this.rtxtDeBai.Size = new System.Drawing.Size(1332, 90);
             this.rtxtDeBai.TabIndex = 27;
             this.rtxtDeBai.Text = "";
@@ -537,10 +547,13 @@
             this.gridControl1.DataMember = "DataTable1";
             this.gridControl1.DataSource = this.dsBangcauhoiBindingSource;
             this.gridControl1.Dock = System.Windows.Forms.DockStyle.Left;
+            // 
+            // 
+            // 
             this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4);
-            gridLevelNode2.RelationName = "Level1";
+            gridLevelNode1.RelationName = "Level1";
             this.gridControl1.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode2});
+            gridLevelNode1});
             this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Margin = new System.Windows.Forms.Padding(4);
@@ -752,7 +765,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "BatDauThi";
-            this.Text = "BatDauThi";
+            this.Text = "Giao diện thi";
             this.Load += new System.EventHandler(this.BatDauThi_Load);
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);

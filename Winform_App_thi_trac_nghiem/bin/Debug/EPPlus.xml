@@ -32918,8 +32918,8 @@
         </member>
         <member name="P:OfficeOpenXml.ExcelWorkbook.MaxFontWidth">
             <summary>
-            Max font width for the workbook
-            <remarks>This method uses GDI. If you use Azure or another environment that does not support GDI, you have to set this value manually if you don't use the standard Calibri font</remarks>
+            Max font width for the workbook, used in the calculation of column widths.
+            <remarks>This property uses the static <see cref="F:OfficeOpenXml.FontSize.FontWidths"></see> dictionary to get the max font width /></remarks>
             </summary>
         </member>
         <member name="P:OfficeOpenXml.ExcelWorkbook.Protection">
@@ -36268,6 +36268,7 @@
             Set to true if the worksheet is contains transposed data.
             </summary>
         </member>
+        <!-- Badly formed XML comment ignored for member "P:OfficeOpenXml.Export.ToDataTable.ToDataTableOptions.AllowDuplicateColumnNames" -->
         <member name="M:OfficeOpenXml.Export.ToDataTable.ToDataTableOptions.SetPrimaryKey(System.String[])">
             <summary>
             Sets the primary key of the data table. 
@@ -67478,6 +67479,14 @@
             </example>
             </summary>
         </member>
+        <member name="P:OfficeOpenXml.Table.ExcelTableColumn.IsCalculatedFormulaArray">
+            <summary>
+            If the calculated formula is an array formula. 
+            This property will be set if the formula calculation evaluate the formula as an array formula. 
+            See <see cref="M:OfficeOpenXml.CalculationExtension.Calculate(OfficeOpenXml.ExcelWorkbook)"/>        
+            </summary>
+            <exception cref="T:System.InvalidOperationException">If the <see cref="P:OfficeOpenXml.Table.ExcelTableColumn.CalculatedColumnFormula"></see> is null or empty.</exception>
+        </member>
         <member name="P:OfficeOpenXml.Table.ExcelTableColumn.Table">
             <summary>
             The <see cref="T:OfficeOpenXml.Table.ExcelTable"/> containing the table column
@@ -69731,6 +69740,16 @@
         <member name="P:OfficeOpenXml.Table.PivotTable.ExcelPivotTableField.Outline">
             <summary>
             A boolean that indicates whether the items in this field should be shown in Outline form
+            </summary>
+        </member>
+        <member name="P:OfficeOpenXml.Table.PivotTable.ExcelPivotTableField.InsertBlankRow">
+            <summary>
+            A boolean that indicates whether a blank row should be inserted after each item.
+            </summary>
+        </member>
+        <member name="P:OfficeOpenXml.Table.PivotTable.ExcelPivotTableField.RepeatItemLabels">
+            <summary>
+            A boolean that indicates whether the item labels should repeat or not.
             </summary>
         </member>
         <member name="P:OfficeOpenXml.Table.PivotTable.ExcelPivotTableField.SubtotalTop">

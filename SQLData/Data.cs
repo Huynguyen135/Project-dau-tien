@@ -258,6 +258,26 @@ namespace SQLData
             }
         }
 
+        public static int xoacauhoitheoid(int idcauhoi)
+        {
+            string sql = "DELETE FROM CauHoi where IdCauHoi = @idcauhoi";
+            int sodong = 0;
+            try
+            {
+                using (SqlCommand sqlcmd = new SqlCommand(sql, connect))
+                {
+                    sqlcmd.Parameters.AddWithValue("@idcauhoi", idcauhoi);
+                    sodong = sqlcmd.ExecuteNonQuery();
+                }
+                return sodong;
+            }
+            catch(Exception e)
+            {
+                MessageBox.Show($"loi khi xoa cau hoi: {e.Message}");
+                return sodong;
+            }
+        }
+
         //end of vung thao tac du lieu 
 
         //vung xuat du lieu, ket qua
@@ -305,5 +325,75 @@ namespace SQLData
             }
         }
         //end of vung xuat du lieu, ket qua
+
+        //vung thao tac tai khoan
+        public static DataTable hienthitaikhoan()
+        {
+            string sql = "select * from NguoiDung";
+            DataTable dt = new DataTable();
+            try
+            {
+                using(SqlCommand sqlcmd = new SqlCommand( sql, connect))
+                {
+                    sqlcmd.CommandText = sql;
+                    SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sqlcmd);
+                    sqlDataAdapter.Fill(dt);
+                    return dt;
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show($"Lỗi: {ex.Message}");
+                return dt;
+            }
+        }
+
+        public static int capnhattaikhoan(string CCCD, string hoten, byte tuoi, string bangthi)
+        {
+            string sql = "Update NguoiDung set HoTen = @hoten, Tuoi = @tuoi,IdBangThi = @idbangthi  where CCCD = @CCCD";
+            int sodong = 0;
+            try
+            {
+                using(SqlCommand sqlcmd = new SqlCommand(sql, connect))
+                {
+                    sqlcmd.Parameters.AddWithValue("@CCCD", CCCD);
+                    sqlcmd.Parameters.AddWithValue("@hoten", hoten);
+                    sqlcmd.Parameters.AddWithValue("@tuoi", tuoi);
+                    sqlcmd.Parameters.AddWithValue("@idbangthi", bangthi);
+
+                    sodong = sqlcmd.ExecuteNonQuery();
+                    return sodong;
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show($"loi khi cap nhat nguoi dung: {e.Message}");
+                return sodong;
+            }
+        }
+
+       public static DataTable timkiemtaikhoan(string cccd)
+        {
+            string sql = "select * from NguoiDung where CCCD = @cccd";
+           DataTable dataTable = new DataTable();
+            try
+            {
+                using(SqlCommand sqlcmd = new SqlCommand( sql, connect))
+                {
+                    sqlcmd.Parameters.AddWithValue("@cccd", cccd);
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(sqlcmd))
+                    {
+                        // Đổ dữ liệu vào DataTable
+                        adapter.Fill(dataTable);
+                    }
+                    return dataTable;
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show($"loi tim kiem: {e.Message}");
+                return dataTable;
+            }
+        }
     }
 }

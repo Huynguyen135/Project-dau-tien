@@ -62,16 +62,16 @@ Hướng dẫn setup:
    -  sau khi đã hoàn thành các bước trên, ta sẽ đến với project project Winform_App_thi_trac_nghiem.
    -  ở trong project, ta sẽ thấy 1 cái form với tên Form1.cs.
    -  bấm vào file đó, ta sẽ thấy giao diện nhập dữ liệu câu hỏi.
-   -  để đến phần code, ta hãy bấm vào 1 phần tử bất kì trong giao diện đó (khuyến nghị nên bấm vào nút "Nhập câu" trên giao diện)
+   -  để đến phần code, ta hãy bấm vào 1 button bất kì trong giao diện: ![alt text](image-3.png)
    
-   -  sau khi bấm, đoạn code sẽ hiện ra và lúc này chúng ta sẽ thực hiện thao tác ở đoạn mã nhập file (nằm ở dòng 379)
-   -  ở trong đoạn mã đó, phần tử filepath sẽ là phần tử chứa đường lưu đến file ecxel chứa dữ liệu câu hỏi
+   -  sau khi bấm, đoạn code sẽ hiện ra và lúc này chúng ta sẽ thực hiện thao tác ở đoạn mã nhập file (nằm ở dòng 522)
+   -  ở trong đoạn mã đó, biến filepath sẽ là biến chứa đường lưu đến file ecxel chứa dữ liệu câu hỏi
    -  lúc này, ta cần chỉnh sửa lại cấu trúc đường lưu như sau: @"C:\tenfileA\tenfilec\CauHoi1.xlsx"
    -  lưu ý: CauHoi1.xlsx là tên của file chứa dũ liệu câu hỏi, vui lòng không chỉnh sửa tên
    -  sau khi chỉnh sửa xong, chúng ta thực hiện chạy chương trình 
-   -  sau khi chạy chương trình thì thứ mà ta quan tâm là nút nhập file trong cột này: ![alt text](image-2.png)
-   -  sau khi nhấn nút nhập file thì nó sẽ hiện ra bảng thông báo nhập thành công, nếu nó không hiện hoặc nó hiện thông báo lỗi thì bạn hãy kiểm tra laij đường lưu
-   -  sau khi nhập thành công thì ở dưới phần datagridview sẽ hiện ra danh sách câu hỏi. Lúc này bạn cần bấm vào nút "xử lí null" để thực hiện xóa những câu có đáp án 
+   -  sau khi chạy chương trình, di chuột vào thanh menu nằm trên đầu của giao diện, bấm vào mục "Quản lý câu hỏi" và chọn mục "Nhập dữ liệu câu hỏi": ![alt text](image-4.png)
+   -  sau khi chọn, chương trình sẽ thực hiện nhập dữ liệu và sau khi hoàn tất, chương trình sẽ thông báo nhập thành công, nếu nó không hiện hoặc nó hiện thông báo lỗi thì bạn hãy kiểm tra lại đường lưu
+   -  sau khi nhập thành công thì ở dưới phần datagridview sẽ hiện ra danh sách câu hỏi. Lúc này bạn cần vào mục "Quản lý câu hỏi" và chọn vào mục "Xử lý đáp án null" để thực hiện xóa những câu có đáp án 
       là null nhằm đảm bảo bài thi hoạt động trơn tru.
       
    -  sau khi hoàn thành hết các bước trên thì bạn đã set up xong, chúc bạn làm bài thi vui vẻ :)))

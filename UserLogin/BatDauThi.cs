@@ -219,11 +219,6 @@ namespace UserLogin
         }
 
        
-
-        private void listcauhoi_SelectedIndexChanged(object sender, EventArgs e)
-        {
-          
-        }
         public static Image Base64ToImage(string img)
         {
             try

@@ -46,9 +46,29 @@ namespace SQLLogic
             Data.Luuhinhanh(idcauhoi, image);
         }
 
+        public static int xoacauhoi(int idcauhoi)
+        {
+            return Data.xoacauhoitheoid(idcauhoi);
+        }
+
         public static int xulinull()
         {
             return Data.xulinull();
+        }
+
+        public static DataTable hienthitaikhoannguoidung()
+        {
+            return Data.hienthitaikhoan();
+        }
+
+        public static int capnhattaikhoan(string cccd, string hoten, byte tuoi, string bangthi)
+        {
+            return Data.capnhattaikhoan(cccd, hoten, tuoi, bangthi);
+        }
+
+        public static DataTable timkiemtaikhoan(string cccd)
+        {
+            return Data.timkiemtaikhoan(cccd);
         }
     }
 }
