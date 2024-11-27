@@ -51,16 +51,9 @@ Hướng dẫn setup:
    -  lúc này, ta cần chỉnh sửa lại cấu trúc đường lưu như sau: @"C:\tenfileA\tenfilec\CauHoi1.xlsx"
    -  lưu ý: CauHoi1.xlsx là tên của file chứa dũ liệu câu hỏi, vui lòng không chỉnh sửa tên
    -  sau khi chỉnh sửa xong, chúng ta thực hiện chạy chương trình 
-<<<<<<< HEAD
+
    -  sau khi chạy chương trình, di chuột vào thanh menu nằm trên đầu của giao diện, bấm vào mục "Quản lý câu hỏi" và chọn mục "Nhập dữ liệu câu hỏi": ![alt text](image-4.png)
    -  sau khi chọn, chương trình sẽ thực hiện nhập dữ liệu và sau khi hoàn tất, chương trình sẽ thông báo nhập thành công, nếu nó không hiện hoặc nó hiện thông báo lỗi thì bạn hãy kiểm tra lại đường lưu
-   -  sau khi nhập thành công thì ở dưới phần datagridview sẽ hiện ra danh sách câu hỏi. Lúc này bạn cần vào mục "Quản lý câu hỏi" và chọn vào mục "Xử lý đáp án null" để thực hiện xóa những câu có đáp án 
-=======
-   -  sau khi chạy chương trình thì thứ mà ta quan tâm là nút nhập file trong cột này:
-   -  ![alt text](image-2.png)
-   -  sau khi nhấn nút nhập file thì nó sẽ hiện ra bảng thông báo nhập thành công, nếu nó không hiện hoặc nó hiện thông báo lỗi thì bạn hãy kiểm tra lại đường lưu
-   -  sau khi nhập thành công thì ở dưới phần datagridview sẽ hiện ra danh sách câu hỏi. Lúc này bạn cần bấm vào nút "xử lí null" để thực hiện xóa những câu có đáp án 
->>>>>>> 4f355b0849a47fd4eaff5d069d76f690f8c57756
-      là null nhằm đảm bảo bài thi hoạt động trơn tru.
+   -  sau khi nhập thành công thì ở dưới phần datagridview sẽ hiện ra danh sách câu hỏi. Lúc này bạn cần vào mục "Quản lý câu hỏi" và chọn vào mục "Xử lý đáp án null" để thực hiện xóa những câu có đáp án  là null nhằm đảm bảo bài thi hoạt động trơn tru.
       
    -  sau khi hoàn thành hết các bước trên thì bạn đã set up xong, chúc bạn làm bài thi vui vẻ :)))
